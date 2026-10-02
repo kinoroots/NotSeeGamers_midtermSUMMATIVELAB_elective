@@ -3,6 +3,7 @@ const fullName = document.querySelector("#full-name");
 const studentEmail = document.querySelector("#student-email");
 const eventChoice = document.querySelector("#event-choice");
 const formMessage = document.querySelector("#form-message");
+const submitButton = form.querySelector("[type='submit']");
 const emailPattern = /^[^\s@]+@univ\.edu\.ph$/i;
 
 const fields = [fullName, studentEmail, eventChoice];
@@ -50,7 +51,7 @@ document.querySelectorAll(".choose-event").forEach((button) => {
   });
 });
 
-form.addEventListener("submit", (event) => {
+form.addEventListener("submit", async (event) => {
   event.preventDefault();
 
   const invalid = getInvalidField();
@@ -63,7 +64,32 @@ form.addEventListener("submit", (event) => {
     return;
   }
 
-  const name = fullName.value.trim();
-  const selectedEvent = eventChoice.value;
-  setMessage(`Thanks, ${name}. Your place for ${selectedEvent} is reserved in this demo.`);
+  submitButton.disabled = true;
+  form.setAttribute("aria-busy", "true");
+
+  try {
+    const response = await fetch("/api/registrations", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        fullName: fullName.value.trim(),
+        email: studentEmail.value.trim(),
+        eventTitle: eventChoice.value,
+      }),
+    });
+    const result = await response.json().catch(() => ({}));
+
+    if (!response.ok) {
+      const validationMessage = Object.values(result.errors ?? {}).flat()[0];
+      setMessage(result.message ?? validationMessage ?? "Registration could not be completed. Please try again.", true);
+      return;
+    }
+
+    setMessage(`Registration confirmed for ${result.eventTitle}. Reference: ${result.registrationId}.`);
+  } catch {
+    setMessage("Could not reach the registration server. Start the backend and try again.", true);
+  } finally {
+    submitButton.disabled = false;
+    form.removeAttribute("aria-busy");
+  }
 });
