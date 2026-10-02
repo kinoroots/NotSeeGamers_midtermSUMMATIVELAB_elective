@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123b32">
+  <meta name="description" content="Explore campus events and reserve your place in the university community.">
+  <title>Campus Calendar | NotSee University</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <section class="masthead" aria-label="NotSee University campus events">
+      <a class="wordmark" href="#main" aria-label="NotSee University campus events home">
+        <span class="wordmark-mark" aria-hidden="true">N</span>
+        <span>NotSee <span class="wordmark-light">University</span></span>
+      </a>
+      <p class="masthead-note">A good semester starts together.</p>
+      <a class="masthead-link" href="#registration">Find your place <span aria-hidden="true">&darr;</span></a>
+    </section>
+  </header>
+
+  <main id="main">
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> Campus life / Fall 2026</p>
+      <h1 id="page-title">Make room for<br><em>something new.</em></h1>
+      <p class="intro-copy">Six ways to meet your people, pick up a new skill, or make an ordinary afternoon a little less ordinary.</p>
+      <p class="issue-mark" aria-label="Six events, one campus"><span>06</span><span class="issue-rule" aria-hidden="true"></span><span>one campus</span></p>
+    </section>
+
+    <section class="events" aria-labelledby="events-title">
+      <header class="section-heading">
+        <section>
+          <p class="eyebrow">On the calendar</p>
+          <h2 id="events-title">Coming up on campus</h2>
+        </section>
+        <p class="section-aside">Pick a date. Bring a friend.<br>There’s a seat for you.</p>
+      </header>
+
+      <section class="event-grid" aria-label="Available campus events">
+        <article class="event-card">
+          <img class="event-image image-green" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23dce9cd'/%3E%3Ccircle cx='500' cy='84' r='43' fill='%23eeae55'/%3E%3Cpath d='M0 242Q135 156 268 245T640 210V360H0Z' fill='%235d8560'/%3E%3Cpath d='M0 283Q160 215 335 287T640 250V360H0Z' fill='%231e5140'/%3E%3Cpath d='M92 255V148h108v107M82 148l64-54 65 54M111 174h23v27h-23m42-27h23v27h-23' fill='none' stroke='%23f6f0dc' stroke-width='9' stroke-linejoin='round'/%3E%3Cpath d='M308 277v-77m0 35-25-20m25 12 24-22m-24 9-18-24m18 29 20-7' fill='none' stroke='%23f6f0dc' stroke-width='8' stroke-linecap='round'/%3E%3C/svg%3E" alt="A sunny green campus hill with a small gathering place and a student beneath a golden sun">
+          <section class="event-content">
+            <p class="event-date"><span>SEP</span><strong>18</strong><span>FRI</span></p>
+            <p class="event-category">Meet &amp; mingle</p>
+            <h3>Welcome Back Picnic</h3>
+            <p class="event-details"><span>12:00 PM</span><span aria-hidden="true">/</span><span>Maple Quad</span></p>
+            <p class="event-description">Ease into the semester over lawn games, local snacks, and good company under the old maples.</p>
+            <p class="seats"><span class="seat-dot" aria-hidden="true"></span><strong>24 seats left</strong></p>
+            <button class="choose-event" type="button" data-event="Welcome Back Picnic">Choose this event <span aria-hidden="true">&rarr;</span></button>
+          </section>
+        </article>
+
+        <article class="event-card">
+          <img class="event-image image-orange" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23f4d8b7'/%3E%3Cpath d='M0 278 160 159l90 73 112-137 278 185v80H0Z' fill='%23cf7351'/%3E%3Cpath d='m90 278 73-53 39 34 73-90 132 109H90Z' fill='%23efaa63'/%3E%3Cpath d='M247 360V227h147v133m-147-109h147m-126 0v109m42-109v109m42-109v109' fill='none' stroke='%234b3c32' stroke-width='9'/%3E%3Ccircle cx='499' cy='81' r='31' fill='%23f6f0dc'/%3E%3Cpath d='M40 320h560' stroke='%234b3c32' stroke-width='6'/%3E%3C/svg%3E" alt="Warm evening light falling on a small outdoor stage against orange hills">
+          <section class="event-content">
+            <p class="event-date"><span>SEP</span><strong>23</strong><span>WED</span></p>
+            <p class="event-category">Live music</p>
+            <h3>Open-Air Jazz Night</h3>
+            <p class="event-details"><span>6:30 PM</span><span aria-hidden="true">/</span><span>Amphitheater</span></p>
+            <p class="event-description">Bring a blanket for an easygoing evening of student jazz, sunset skies, and late-summer air.</p>
+            <p class="seats"><span class="seat-dot" aria-hidden="true"></span><strong>38 seats left</strong></p>
+            <button class="choose-event" type="button" data-event="Open-Air Jazz Night">Choose this event <span aria-hidden="true">&rarr;</span></button>
+          </section>
+        </article>
+
+        <article class="event-card">
+          <img class="event-image image-blue" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23d7e8e7'/%3E%3Cpath d='M0 258Q142 216 267 269t373-12v103H0Z' fill='%2384aaa4'/%3E%3Cpath d='M48 251h546' stroke='%232d5c55' stroke-width='9'/%3E%3Cpath d='M101 251v109m437-109v109M82 288h474' stroke='%232d5c55' stroke-width='8'/%3E%3Cpath d='M185 251v-81h111v81m-124-81 69-54 70 54' fill='%23edba68' stroke='%234d5548' stroke-width='8' stroke-linejoin='round'/%3E%3Cpath d='M342 244v-61h135v61m-117-61 49-43 51 43' fill='%23f3e9d0' stroke='%234d5548' stroke-width='8' stroke-linejoin='round'/%3E%3Ccircle cx='490' cy='81' r='32' fill='%23e7a655'/%3E%3C/svg%3E" alt="A quiet lakeside pavilion and dock at the university garden in soft morning light">
+          <section class="event-content">
+            <p class="event-date"><span>OCT</span><strong>02</strong><span>FRI</span></p>
+            <p class="event-category">Slow morning</p>
+            <h3>Mindful Garden Walk</h3>
+            <p class="event-details"><span>8:00 AM</span><span aria-hidden="true">/</span><span>University Garden</span></p>
+            <p class="event-description">Take a gentle guided loop through the lakeside garden, with a pause for breathing and tea.</p>
+            <p class="seats"><span class="seat-dot" aria-hidden="true"></span><strong>12 seats left</strong></p>
+            <button class="choose-event" type="button" data-event="Mindful Garden Walk">Choose this event <span aria-hidden="true">&rarr;</span></button>
+          </section>
+        </article>
+
+        <article class="event-card">
+          <img class="event-image image-yellow" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23f0e7c9'/%3E%3Cpath d='M0 293h640v67H0Z' fill='%23b5c6a4'/%3E%3Cpath d='M133 93h374v207H133Z' fill='%23f9f4e5' stroke='%23534b3c' stroke-width='8'/%3E%3Cpath d='M163 125h135v145H163Zm173 0h141v66H336Z' fill='%23d5e5dc' stroke='%23534b3c' stroke-width='7'/%3E%3Cpath d='M363 211h37v59h-37m30-51 22-17 22 17v52h-44m-266 30h374' fill='none' stroke='%23534b3c' stroke-width='7'/%3E%3Ccircle cx='231' cy='191' r='22' fill='%23e6a45d'/%3E%3Cpath d='M230 216v46m0-28-19 20m19-16 20 16' stroke='%23e6a45d' stroke-width='9' stroke-linecap='round'/%3E%3C/svg%3E" alt="A bright creative studio with large windows and a student sketching at an easel">
+          <section class="event-content">
+            <p class="event-date"><span>OCT</span><strong>09</strong><span>FRI</span></p>
+            <p class="event-category">Make something</p>
+            <h3>Printmaking for Beginners</h3>
+            <p class="event-details"><span>3:00 PM</span><span aria-hidden="true">/</span><span>Arts Studio 204</span></p>
+            <p class="event-description">Try a low-pressure introduction to hand printing. Materials are ready; leave with your first little edition.</p>
+            <p class="seats"><span class="seat-dot" aria-hidden="true"></span><strong>8 seats left</strong></p>
+            <button class="choose-event" type="button" data-event="Printmaking for Beginners">Choose this event <span aria-hidden="true">&rarr;</span></button>
+          </section>
+        </article>
+
+        <article class="event-card">
+          <img class="event-image image-red" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23e6d9cd'/%3E%3Cpath d='M0 257h640v103H0Z' fill='%23a99c85'/%3E%3Cpath d='M101 267V99h139v168m-139-135h139m-111 0v135m82-135v135m82-110h176v110H271Zm0 30h176m-147-30v110m59-110v110m59-110v110' fill='%23f2ead9' stroke='%234d5145' stroke-width='8'/%3E%3Cpath d='m101 99 69-52 70 52m31 23 89-61 97 61' fill='none' stroke='%234d5145' stroke-width='8'/%3E%3Ccircle cx='512' cy='99' r='35' fill='%23d17b5a'/%3E%3C/svg%3E" alt="A welcoming old library with tall windows and a round orange sun beyond the roofline">
+          <section class="event-content">
+            <p class="event-date"><span>OCT</span><strong>16</strong><span>FRI</span></p>
+            <p class="event-category">Stories &amp; supper</p>
+            <h3>Stories at the Stacks</h3>
+            <p class="event-details"><span>5:30 PM</span><span aria-hidden="true">/</span><span>Hawthorne Library</span></p>
+            <p class="event-description">Swap a favorite short story, discover something unexpected, and share a simple meal with readers.</p>
+            <p class="seats"><span class="seat-dot" aria-hidden="true"></span><strong>19 seats left</strong></p>
+            <button class="choose-event" type="button" data-event="Stories at the Stacks">Choose this event <span aria-hidden="true">&rarr;</span></button>
+          </section>
+        </article>
+
+        <article class="event-card">
+          <img class="event-image image-purple" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23e4dfeb'/%3E%3Cpath d='M0 281h640v79H0Z' fill='%238f9c83'/%3E%3Cpath d='M86 281V78h468v203M64 78h512' fill='%23f6f0df' stroke='%23484b52' stroke-width='9'/%3E%3Cpath d='M126 113h151v168H126Zm198 0h190v71H324Z' fill='%23c4d8d2' stroke='%23484b52' stroke-width='8'/%3E%3Cpath d='M357 208h125v73H357Zm-267 73h464' fill='none' stroke='%23484b52' stroke-width='8'/%3E%3Ccircle cx='431' cy='149' r='24' fill='%23e0a65e'/%3E%3Cpath d='M446 166l24 15' stroke='%23484b52' stroke-width='6'/%3E%3C/svg%3E" alt="A bright observatory room with wide windows framing an evening sky and a telescope silhouette">
+          <section class="event-content">
+            <p class="event-date"><span>OCT</span><strong>22</strong><span>THU</span></p>
+            <p class="event-category">Look up</p>
+            <h3>Night Sky Social</h3>
+            <p class="event-details"><span>7:00 PM</span><span aria-hidden="true">/</span><span>North Observatory</span></p>
+            <p class="event-description">Meet the campus astronomy club, find a few constellations, and stay for hot chocolate after dark.</p>
+            <p class="seats"><span class="seat-dot" aria-hidden="true"></span><strong>16 seats left</strong></p>
+            <button class="choose-event" type="button" data-event="Night Sky Social">Choose this event <span aria-hidden="true">&rarr;</span></button>
+          </section>
+        </article>
+      </section>
+    </section>
+
+    <section class="registration" id="registration" aria-labelledby="registration-title">
+      <section class="registration-intro">
+        <p class="eyebrow">Save your seat</p>
+        <h2 id="registration-title">We'll see<br><em>you there.</em></h2>
+        <p>Choose an event and leave the rest to us. You’ll get a confirmation right here.</p>
+        <p class="registration-note"><span aria-hidden="true">*</span> Required fields</p>
+      </section>
+      <form class="registration-form" id="registration-form" novalidate>
+        <p class="form-heading">Your details</p>
+        <label for="full-name">Full name <span aria-hidden="true">*</span></label>
+        <input id="full-name" name="fullName" type="text" autocomplete="name" required aria-required="true" aria-label="Full name" aria-describedby="name-hint" placeholder="e.g. Jordan Lee">
+        <p class="field-hint" id="name-hint">Enter the name you use on campus.</p>
+
+        <label for="student-email">Student email <span aria-hidden="true">*</span></label>
+        <input id="student-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-required="true" aria-label="Student email" aria-describedby="email-hint" placeholder="you@univ.edu.ph">
+        <p class="field-hint" id="email-hint">Use your university address ending in @univ.edu.ph.</p>
+
+        <label for="event-choice">Choose an event <span aria-hidden="true">*</span></label>
+        <select id="event-choice" name="event" required aria-required="true" aria-label="Choose an event" aria-describedby="event-hint">
+          <option value="">Select an event</option>
+          <option>Welcome Back Picnic</option>
+          <option>Open-Air Jazz Night</option>
+          <option>Mindful Garden Walk</option>
+          <option>Printmaking for Beginners</option>
+          <option>Stories at the Stacks</option>
+          <option>Night Sky Social</option>
+        </select>
+        <p class="field-hint" id="event-hint">Choose one event from the calendar.</p>
+
+        <button class="submit-button" type="submit">Reserve my place <span aria-hidden="true">&rarr;</span></button>
+        <p class="form-footnote">This prototype saves nothing and sends no data.</p>
+        <p class="form-message" id="form-message" aria-live="polite" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark footer-wordmark" href="#main" aria-label="Northfield University campus events home">
+      <span class="wordmark-mark" aria-hidden="true">N</span>
+      <span>NotSee <span class="wordmark-light">University</span></span>
+    </a>
+    <p>Make a little time for campus life.</p>
+    <a class="back-to-top" href="#main">Back to top <span aria-hidden="true">&uarr;</span></a>
+  </footer>
+</body>
+</html>
