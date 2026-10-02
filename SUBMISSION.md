@@ -1,6 +1,8 @@
 # Group Hands-On Laboratory Examination: Submission
 
-## Team Roster
+GITHUB LINK: https://github.com/kinoroots/NotSeeGamers_midtermSUMMATIVELAB_elective
+
+## Team NOTSEE G
 | Member | Name | Assigned Role |
 |---|---|---|
 | Member 1 | BARRENO, ELIJAH | Systems Architect & Prompt Lead (Tasks 1, 5) |
