@@ -46,6 +46,13 @@ app.MapPost("/api/registrations", async (CreateRegistrationRequest request, Regi
         var registration = await registrations.CreateRegistrationAsync(fullName!, email!, eventTitle!, cancellationToken);
         return Results.Created($"/api/registrations/{registration.RegistrationId}", registration);
     }
+    catch (RegistrationStorageNotConfiguredException)
+    {
+        return Results.Problem(
+            title: "Registration database is not configured",
+            detail: "Set ConnectionStrings__DefaultConnection in the backend environment, then restart the backend.",
+            statusCode: StatusCodes.Status503ServiceUnavailable);
+    }
     catch (EventNotFoundException exception)
     {
         return Results.NotFound(new { message = exception.Message });

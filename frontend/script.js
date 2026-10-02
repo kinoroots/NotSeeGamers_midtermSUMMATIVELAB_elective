@@ -81,7 +81,7 @@ form.addEventListener("submit", async (event) => {
 
     if (!response.ok) {
       const validationMessage = Object.values(result.errors ?? {}).flat()[0];
-      setMessage(result.message ?? validationMessage ?? "Registration could not be completed. Please try again.", true);
+      setMessage(result.message ?? result.detail ?? validationMessage ?? "Registration could not be completed. Please try again.", true);
       return;
     }
 

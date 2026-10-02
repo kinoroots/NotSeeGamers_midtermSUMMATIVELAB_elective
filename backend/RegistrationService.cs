@@ -17,7 +17,7 @@ public class RegistrationService
         var connectionString = _configuration.GetConnectionString("DefaultConnection");
         if (string.IsNullOrWhiteSpace(connectionString))
         {
-            throw new InvalidOperationException("The DefaultConnection connection string is not configured.");
+            throw new RegistrationStorageNotConfiguredException();
         }
 
         await using var connection = new SqlConnection(connectionString);
@@ -148,3 +148,5 @@ public sealed record RegistrationResult(int RegistrationId, string EventTitle);
 public sealed class EventNotFoundException(string message) : Exception(message);
 
 public sealed class RegistrationConflictException(string message) : Exception(message);
+
+public sealed class RegistrationStorageNotConfiguredException : Exception;
